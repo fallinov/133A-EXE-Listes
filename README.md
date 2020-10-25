@@ -2,6 +2,8 @@
 
 ## Partie 1 – Modifier un élément HTML
 
+![Partie 1](img/133a-exercice-listes-1.gif)
+
 ### A lire avant de commencer :
 
 * [Accéder aux éléments](https://divtec.gitbook.io/133a/javascript/dom-introduction/dom-acceder)
@@ -27,6 +29,8 @@ Sur click du bouton "Changer le contenu de la liste" :
 
 ## Partie 2 - Créer des éléments HTML
 
+![Partie 2](img/133a-exercice-listes-2.gif)
+
 ### A lire avant de commencer :
 
 * [Créer des éléments](https://divtec.gitbook.io/133a/javascript/dom-introduction/dom-creer)
@@ -50,7 +54,9 @@ Sur click du bouton "Ajouter" :
 
 ## Partie 3 - Supprimer des éléments
 
- A lire avant de commencer :
+![Partie 3](img/133a-exercice-listes-3.gif)
+
+### A lire avant de commencer :
 
 * [Supprimer, remplacer et cloner](https://divtec.gitbook.io/133a/javascript/dom-introduction/supprimer-remplacer-et-cloner)
 
