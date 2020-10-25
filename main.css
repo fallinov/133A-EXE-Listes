@@ -1,0 +1,101 @@
+/******************
+GENERAL
+******************/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background: #fff;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 800;
+    color: #599a68;
+}
+
+h1{
+    color: #fff;
+}
+
+h2 {
+    margin: 2em 0 1em;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 2em 0;
+}
+
+li {
+    padding: .25em ;
+}
+
+a {
+    text-decoration: none;
+    color: #6ab47b;
+}
+
+.bouton,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    color: white;
+    padding: 1em;
+    background-color: #599a68;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: #CCC;
+}
+
+.bouton:hover ,
+input[type="submit"]:hover ,
+input[type="button"]:hover,
+input[type="reset"]:hover ,
+button:hover  {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input + label {
+    display: inline;
+}
+
+input,
+textarea {
+    font-size: inherit;
+    color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: .75em;
+}
