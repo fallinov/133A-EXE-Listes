@@ -29,8 +29,6 @@ Sur click du bouton "Changer le contenu de la liste" :
 
 ## Partie 2 - Créer des éléments HTML
 
-![Partie 2](img/133a-exercice-listes-2.gif)
-
 ### A lire avant de commencer :
 
 * [Créer des éléments](https://divtec.gitbook.io/133a/javascript/dom-introduction/dom-creer)
@@ -46,6 +44,8 @@ Sur click du bouton "Ajouter" :
 2. Récupérer le texte entré par l’utilisateur et l’ajouter comme nouvel élément `<li>` à la fin de la liste.
 3. Vider le champ texte
 
+![Partie 2](img/133a-exercice-listes-2.gif)
+
 ### Contraintes
 
 * Interdiction de modifier le document HTML
@@ -54,8 +54,6 @@ Sur click du bouton "Ajouter" :
 
 
 ## Partie 3 - Supprimer des éléments
-
-![Partie 3](img/133a-exercice-listes-3.gif)
 
 ### A lire avant de commencer :
 
@@ -71,6 +69,8 @@ Améliorer votre script du fichier `liste2.js`.
 3. Ajouter un événement double click à la liste `<ul>` :
    1. Récupérer l'élément `<li>` double clické `target` dans la liste `<ul>`
    2. Supprimer l'élément `<li>` double clické
+   
+![Partie 3](img/133a-exercice-listes-3.gif)
 
 ### Contraintes
 
