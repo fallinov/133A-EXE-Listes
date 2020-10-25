@@ -2,8 +2,6 @@
 
 ## Partie 1 – Modifier un élément HTML
 
-![Partie 1](img/133a-exercice-listes-1.gif)
-
 ### A lire avant de commencer :
 
 * [Accéder aux éléments](https://divtec.gitbook.io/133a/javascript/dom-introduction/dom-acceder)
@@ -21,6 +19,8 @@ Sur click du bouton "Changer le contenu de la liste" :
 2. Remplacer le texte de tous les éléments de la liste par « CLICK ME **n** », n représentant la position de l'élément dans la liste : 1, 2, 3, ...
 3. Affecter un évènement click à tous les éléments de la liste qui ouvrira une fenêtre d’avertissement `alert` affichant le contenu de l'élément cliqué.
 
+![Partie 1](img/133a-exercice-listes-1.gif)
+
 ### Contraintes 
 
 * Interdiction de modifier le code du document HTML
@@ -28,8 +28,6 @@ Sur click du bouton "Changer le contenu de la liste" :
 
 
 ## Partie 2 - Créer des éléments HTML
-
-![Partie 2](img/133a-exercice-listes-2.gif)
 
 ### A lire avant de commencer :
 
@@ -46,6 +44,8 @@ Sur click du bouton "Ajouter" :
 2. Récupérer le texte entré par l’utilisateur et l’ajouter comme nouvel élément `<li>` à la fin de la liste.
 3. Vider le champ texte
 
+![Partie 2](img/133a-exercice-listes-2.gif)
+
 ### Contraintes
 
 * Interdiction de modifier le document HTML
@@ -54,8 +54,6 @@ Sur click du bouton "Ajouter" :
 
 
 ## Partie 3 - Supprimer des éléments
-
-![Partie 3](img/133a-exercice-listes-3.gif)
 
 ### A lire avant de commencer :
 
@@ -71,6 +69,8 @@ Améliorer votre script du fichier `liste2.js`.
 3. Ajouter un événement double click à la liste `<ul>` :
    1. Récupérer l'élément `<li>` double clické `target` dans la liste `<ul>`
    2. Supprimer l'élément `<li>` double clické
+   
+![Partie 3](img/133a-exercice-listes-3.gif)
 
 ### Contraintes
 
