@@ -45,5 +45,80 @@
 (function () {
     "use strict";
 
+    const listeCommissions = document.getElementById('listecommissions');
+    const txtCourse = document.getElementById('course');
+
+    /**
+     * Supprime l'élément qui a appelé la fonction
+     * @param event informations sur l'événement
+     */
+    function btSupprimerElement(event) {
+        // event.target permet de récupérer l'élément qui a déclenché l'événemnt
+        // Ensuite on btSupprimer cet élément avec remove()
+        event.target.remove();
+
+        // Ancienne méthode avant l'existance de la méthode de remove()
+        //event.target.parentNode.removeChild(event.target);
+    }
+
+    /**
+     * Supprime le dernier <li> da la liste des commissions
+     * Si la liste est vide affiche une alert
+     */
+    function btSupprimerDernierElement() {
+        //Si il y a encore des éléments dans la liste
+        if (listeCommissions.children.length) {
+            // Supprime le dernier <li> de la liste
+            // Attention de s'assurer que le dernier fils est un élément HTML
+            listeCommissions.querySelector('li:last-child').remove();
+        } else {
+            alert("Liste vide !");
+        }
+    }
+
+    /**
+     * Test si une valeur correcte a été saisie, la récupère et l'ajoute à
+     * la fin de la liste des commissions.
+     */
+    function listeAjoute() {
+        //Si l'utilisateur n'a rien saisi
+        if (txtCourse.value.trim().length === 0) {
+            alert("Entrez un article !");
+            return;
+        }
+
+        //Créer un nouvel élément <li>
+        let newEle = document.createElement('li');
+
+        //Ajouter le texte saisi comme contenu du <li>
+        newEle.innerText = txtCourse.value.trim();
+
+        //Ajouter l'élément <li> à la liste #listelisteCommissions
+        listeCommissions.appendChild(newEle);
+
+        //Vide le champ de saisie après l'ajout
+        txtCourse.value = '';
+    }
+
+    //Récupère le bouton et "écoute" l'événement click et lui affecte la fonction listeChange
+    const btAjouter = document.querySelector('input[type="button"]');
+    btAjouter.addEventListener('click', listeAjoute);
+
+    // Création d'un bouton supprimer en clonant le bouton Ajouter
+    // Le paramètre false passé à cloneNode indique que l'on clone
+    // uniquement son l'élément et pas son contenu
+    const btSupprimer = btAjouter.cloneNode(false);
+    btSupprimer.value = 'Supprimer';
+
+    // Ajour de l'événement click
+    btSupprimer.addEventListener('click', btSupprimerDernierElement);
+
+    // Ajout du bouton supprimer à la fin du paragraphe
+    document.querySelector('p').appendChild(btSupprimer);
+
+    // Ajoute le double click à la liste
+    // Le fait d'ajouter un événement à un élément l'ajoute automatiquement
+    // à tous ses enfants, ici tous les <li> actuels et futurs
+    listeCommissions.addEventListener('dblclick', btSupprimerElement);
 
 }()); //Main IIFE
