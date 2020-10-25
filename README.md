@@ -19,7 +19,7 @@ Sur click du bouton "Changer le contenu de la liste" :
 
 1. Changer le style CSS de la liste, `list-style-type`, en carré : `square`
 2. Remplacer le texte de tous les éléments de la liste par « CLICK ME **n** », n remprésentant la position de l'élément dans la liste : 1, 2, 3, ...
-3. Affecter un évènement click à tous les éléments de la liste qui ouvrira une fenêtre d’avertissement (alert) affichant le contenu de de l'élément cliqué.
+3. Affecter un évènement click à tous les éléments de la liste qui ouvrira une fenêtre d’avertissement `alert` affichant le contenu de de l'élément cliqué.
 
 ### Contraintes 
 
@@ -41,8 +41,8 @@ Récupérer les fichiers `liste2.html` et `liste2.js`.
 
 Sur click du bouton "Ajouter" :
 
-1. Valider que le champs texte n'est pas vide. S'il est vide afficher "Entrez un article !" dans une alert et terminer le script.
-2. Récupérer le texte entré par l’utilisateur et l’ajouter comme nouvel élément <li> à la fin de la liste.
+1. Valider que le champs texte n'est pas vide. S'il est vide afficher "Entrez un article !" dans une `alert` et terminer le script.
+2. Récupérer le texte entré par l’utilisateur et l’ajouter comme nouvel élément `<li>` à la fin de la liste.
 3. Vider le champ texte
 
 ### Contraintes
@@ -66,9 +66,9 @@ Améliorer votre script du fichier `liste2.js`.
 
 1. En JavaScript, ajouter un bouton "Supprimer" à la fin du paragraphe contenant le champ texte et le bouton "Ajouter".
 2. Sur click du nouveau bouton "Supprimer" supprimer le dernier élément de la liste.
-3. Ajouter un événement double click à la liste <ul> :
-   1. Récupérer l'élément <li> double clické (target) dans la liste <ul>
-   2. Supprimer l'élément <li> double clické
+3. Ajouter un événement double click à la liste `<ul>` :
+   1. Récupérer l'élément `<li>` double clické `target` dans la liste `<ul>`
+   2. Supprimer l'élément `<li>` double clické
 
 ### Contraintes
 
