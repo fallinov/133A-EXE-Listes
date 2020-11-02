@@ -55,7 +55,10 @@
     function btSupprimerElement(event) {
         // event.target permet de récupérer l'élément qui a déclenché l'événemnt
         // Ensuite on btSupprimer cet élément avec remove()
-        event.target.remove();
+        if(event.target.nodeName === "LI") {
+            event.target.remove();
+        }
+
 
         // Ancienne méthode avant l'existance de la méthode de remove()
         //event.target.parentNode.removeChild(event.target);
