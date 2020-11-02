@@ -6,3 +6,4 @@
 * Récupérer le 1er élément du tableau ou utiliser querySelector
 * Appliquer le style à la `<ul>` 
 * Utiliser addEventListener pour affecter des événements par on***.
+* return et pas de if...else
