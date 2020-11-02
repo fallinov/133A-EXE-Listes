@@ -75,6 +75,8 @@
     }
 
     //Récupère le bouton et "écoute" l'événement click et lui affecte la fonction listeChange
-    document.querySelector('input[type="button"]').addEventListener('click', listeChange);
+    let a = document.querySelector('input[type="button"]').addEventListener('click', listeChange);
+
+    a,onclick(alert("ok"))
 
 }()); //Main IIFE

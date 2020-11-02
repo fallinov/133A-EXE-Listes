@@ -4,4 +4,5 @@
 * Ne supprimer que si c'est un "LI".
   Récupérer le nom de la balise avec : `event.target.nodeName`
 * Récupérer le 1er élément du tableau ou utiliser querySelector
-* Appliquer le style à la `<ul>`  
+* Appliquer le style à la `<ul>` 
+* Utiliser addEventListener pour affecter des événements par on***.
