@@ -9,3 +9,6 @@
 * `return` et pas de `if...else`
 * `i++ => ++1`
 * Faire une branche par partie d'exercice
+* Changer nom et date en haut du fichier.
+* Max **une** ligne vierge !
+* Remplacer par écoute de l'événement `dblclick` sur la `<ul>` et supprimer uniquement si `<li>` comme `target`.
