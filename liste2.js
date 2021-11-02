@@ -45,5 +45,24 @@
 (function () {
     "use strict";
 
+    /*let elementsUl = document.querySelectorAll('li');
+
+    for (let i=0; i < elementsUl.length; i++) {
+        elementsUl[i].addEventListener('dblclick', function delLi(){
+            elementsUl[i].remove();
+        });
+    }*/
+
+    let liste = document.getElementById('listecommissions');
+    console.log(liste)
+
+    document.addEventListener('dblclick', function dblListe(event){
+        let cible = event.target;
+
+        if (cible.nodeName === 'LI') {
+            cible.remove();
+        }
+
+    });
 
 }()); //Main IIFE
