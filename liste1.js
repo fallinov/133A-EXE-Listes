@@ -6,10 +6,10 @@
  *     1. Changer le style CSS de la liste, list-style-type, en carré : square
  *
  *     2. Remplacer le texte de tous les éléments de la liste par « CLICK ME n »
- *        n remprésentant la position de l'élément dans la liste : 1, 2, 3, ...
+ *        n représentant la position de l'élément dans la liste : 1, 2, 3, ...
  *
  *     3. Affecter un évènement click à tous les éléments de la liste qui
- *        ouvrira une fenêtre d’avertissement (alert) affichant le contenu de
+ *        ouvrira une fenêtre d’avertissement (alert) affichant le contenu
  *        de l'élément cliqué.
  *
  * Contraintes :
@@ -40,8 +40,7 @@
 
     /**
      * Récupère tous les <li> du document HTML et :
-     *
-     *     - change le style de leur puces en carré
+     *     - change le style de leur puce en carré
      *     - remplace leur contenu HTML par "CLICK ME 1, CLICK ME 2, ..."
      *     - affecte un événement click qui appelle la fonction bonjour
      */
@@ -59,22 +58,21 @@
         Element.getElementsByTagName().
         */
         let listeElements = document.getElementsByTagName('li');
-        //console.log(listeElements);
 
         for(let i=0; i < listeElements.length; i++) {
-            //Change le type de la puce du <li> par un carré
+            // Change le type de la puce du <li> par un carré
             listeElements[i].style.listStyleType = 'square';
 
-            //Remplace le contenu du <li>
+            // Remplace le contenu du <li>
             listeElements[i].innerHTML = 'CLICK ME ' + (i+1);
 
-            //Ecoute l'événement click sur le <li> et lui affecte la fonction bonjour
+            // Écoute l'événement click sur le <li> et lui affecte la fonction bonjour
             listeElements[i].addEventListener('click', bonjour);
-            //Même chose en optimisant le code : listeElements[i].addEventListener('click',() => alert("bonjour"));
+            // Même chose en optimisant le code : listeElements[i].addEventListener('click',() => alert("bonjour"));
         }
     }
 
-    //Récupère le bouton et "écoute" l'événement click et lui affecte la fonction listeChange
+    // Récupère le bouton et "écoute" l'événement click et lui affecte la fonction listeChange
     document.querySelector('input[type="button"]').addEventListener('click', listeChange);
 
 }()); //Main IIFE
