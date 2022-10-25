@@ -67,8 +67,9 @@
             listeElements[i].innerHTML = 'CLICK ME ' + (i+1);
 
             // Écoute l'événement click sur le <li> et lui affecte la fonction bonjour
-            listeElements[i].addEventListener('click', bonjour);
-            // Même chose en optimisant le code : listeElements[i].addEventListener('click',() => alert("bonjour"));
+            // listeElements[i].addEventListener('click', bonjour);
+            // Même chose en optimisant le code :
+            listeElements[i].addEventListener('click', () => alert(listeElements[i].innerHTML));
         }
     }
 

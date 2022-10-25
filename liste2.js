@@ -54,7 +54,7 @@
      */
     function btSupprimerElement(event) {
         // event.target permet de récupérer l'élément qui a déclenché l'événemnt
-        // Comme on écoutre l'événement sur la liste complète,
+        // Comme on écoute l'événement sur la liste complète,
         // on teste si cet élément est un <li> avant de le supprimer
         if(event.target.nodeName === "LI") {
             event.target.remove();
@@ -86,18 +86,18 @@
             alert("Entrez un article !");
             return;
         }
-
         //Créer un nouvel élément <li>
         let newEle = document.createElement('li');
-
         //Ajouter le texte saisi comme contenu du <li>
         newEle.innerText = txtCourse.value.trim();
-
         //Ajouter l'élément <li> à la liste #listelisteCommissions
         listeCommissions.appendChild(newEle);
+        // Autre solution :
+        // listeCommissions.innerHTML += `<li>${txtCourse.value.trim()}</li>`
 
         //Vide le champ de saisie après l'ajout
         txtCourse.value = '';
+        txtCourse.focus();
     }
 
     //Récupère le bouton et "écoute" l'événement click et lui affecte la fonction listeChange
